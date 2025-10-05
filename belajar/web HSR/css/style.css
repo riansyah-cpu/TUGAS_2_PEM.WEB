@@ -1,0 +1,111 @@
+    body {
+        font-family: arial, sans-serif;
+        background-color: #0d0f1a;
+        color: #e0e0e0;
+        margin: 0;
+        padding: 0;
+    }
+header {
+    background-color: #1c1f2b;
+    color: #fff;
+    text-align: center;
+    padding: 0; 
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+nav a {
+    color: blue;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+}
+/* nav a {
+    text-decoration: underline;
+} */
+main {
+    padding: 80px ;
+
+}
+h2, h3 {
+    color: #66ccff;
+}
+img {
+    display: block;
+    margin: 10px auto;
+    border-radius: 10px;
+}
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    text-align: center;
+}
+th, td {
+      border: 1px solid #66ccff;
+      padding: 10px;
+    }
+    th {
+      background-color: #1c1f2b;
+    }
+    footer {
+      text-align: center;
+      background-color: #1c1f2b;
+      color: #999;
+      padding: 10px;
+    }
+
+    .gallery {
+      column-count: 4; /* jumlah kolom (bisa lo ubah sesuai layar) */
+      column-gap: 15px; /* jarak antar kolom */
+      width: 90%;
+      max-width: 1200px;
+      margin: 30px auto;
+    }
+
+    .gallery-item {
+      background: white;
+      display: inline-block;
+      margin: 0 0 15px;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      width: 100%;
+      transition: transform 0.3s ease;
+       /*position: relative; biar bisa dikontrol z-index-nya */
+      /* z-index: 1; */
+    }
+
+    .gallery-item:hover {
+      transform: translateY(-10px);
+      /* z-index: 10; */
+    }
+
+    .gallery-item img {
+      width: 100%;
+      display: block;
+    }
+
+    .gallery-item p {
+      padding: 10px;
+      margin: 0;
+      font-size: 0.9rem;
+      color: #333;
+    }
+
+    .video-section {
+      text-align: center;
+      margin: 40px 0;
+    }
+
+    .video-section video {
+      width: 60%;
+      max-width: 600px;
+      border-radius: 10px;
+    }
+
+    .video-caption {
+      margin-top: 10px;
+      font-style: italic;
+      color: #ccc;
+    }
